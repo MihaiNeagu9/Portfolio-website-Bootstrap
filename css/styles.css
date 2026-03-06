@@ -36,6 +36,31 @@
   opacity: 0.8;
 }
 
+@media (min-width: 768px) {
+  .profile-equal-rows > [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-equal-rows .profile-col-intro {
+    min-height: 9rem;
+  }
+  .profile-equal-rows .list-group {
+    margin-bottom: 0;
+  }
+  .profile-equal-rows .list-group-item {
+    min-height: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile-equal-rows .list-group-item h5 {
+    margin-bottom: 0.4rem;
+  }
+  .profile-equal-rows .list-group-item p {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .header .social i {
     font-size: 30px;
